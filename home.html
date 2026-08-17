@@ -11,18 +11,25 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
         rel="stylesheet">
+    <script src="home.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <a href="seu-link-aqui.html">
+    <header class="site-header">
+        <a class="brand" href="home.html" aria-label="Ritual Café — página inicial">
             <img src="assets/logo-header.png" alt="RITUAL">
         </a>
-        <nav class="links">
-            <a href="#" class="active">Home</a>
-            <a href="#">Cardápio</a> <a href="#">Sobre nós</a>
-            <a href="#">Contato</a>
-        </nav> <a href="#" class="verCardapio">Ver o cardápio <span>▼</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation"
+            aria-label="Abrir menu de navegação">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="links header-nav" id="main-navigation" aria-label="Navegação principal">
+            <a href="home.html" class="active" aria-current="page">Home</a>
+            <a href="cardapio.html">Cardápio</a> <a href="sobre.html">Sobre nós</a>
+            <a href="contato.html">Contato</a>
+        </nav> <a href="cardapio.html" class="verCardapio">Ver o cardápio <span aria-hidden="true">→</span></a>
     </header>
 </body>
 
