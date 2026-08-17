@@ -290,3 +290,21 @@ nav a.active {
   display: block;
 }
 /* Fotter*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #172923;
+
+    h4 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+
+    img {
+        width: 150px;
+    }
+}
