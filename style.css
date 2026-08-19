@@ -105,5 +105,59 @@
 
     .texto-vermelho{
         color: var(--corVemelhoD);
+        margin-bottom:20px;
         
+    }
+
+    .texto-localizacao{
+        font-family: "Cormorant Garamond", serif; 
+        font-size: 20px;
+        a{
+
+        }
+        .margem{
+            margin-bottom: 20px;
+        }
+    }
+
+    .sobre{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sobre-blocos{
+        width: 300px ;
+        a{
+            font-family:"IBM Plex Mono", monospace; 
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+
+    .texto-faledireto{
+        p{
+            margin-bottom: 15px;
+        }
+        text-decoration: underline;
+    }
+   
+    .segsex{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 40px; 
+        margin-bottom: 15px; 
+    }
+    
+    .sab{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 40px; 
+        margin-bottom: 15px; 
+    }
+    
+    .dom{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 40px;
+        margin-bottom: 15px; 
     }
