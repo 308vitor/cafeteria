@@ -128,11 +128,12 @@
                 margin-bottom: 5px;
             }
         }
+        height: 1000px;
     }
 
     .mapa {
         iframe {
-            height: 600px;
+            height: 700px;
         }
     }
 
@@ -218,16 +219,19 @@
     }
 
     .novidades {
+        padding-top: 100px;
         h1 {
-
             font-size: 40px;
             font-family: "Cormorant Garamond", serif !important;
+            margin-bottom: 25px;
         }
 
         input {
             background-color: var(--corFundoP);
             border: none;
             width: 750px;
+            margin-bottom: 10px;
+            font-size: 17px;
         }
 
         .linhapreta2 {
