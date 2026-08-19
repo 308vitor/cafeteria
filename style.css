@@ -3,10 +3,12 @@
         padding: 0;
         box-sizing: border-box;
     }
-    body{
+
+    body {
         font-family: "IBM Plex Mono", monospace;
         background-color: var(--corFundoP);
     }
+
     :root {
         --corFundoP: #F4EFE5;
         --corFundoD: #172923;
@@ -18,15 +20,34 @@
         --maxWidth: 1100px;
     }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 60px;
-        background-color: var(--corFundoP);
-        font-size: 13px;
-        letter-spacing: 0.5px;
 
+    header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 50px;
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+
+            a {
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.75);
+            }
+
+            .select {
+                border-bottom: 2px solid rgb(205, 92, 21);
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.75);
+        }
     }
 
     header img {
@@ -58,11 +79,12 @@
     }
 
     .hero {
-        margin-top: 130px  ;
+        margin-top: 80px;
         gap: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 100px;
 
         .texto-principal {
             font-family: "Cormorant Garamond", serif !important;
@@ -81,83 +103,136 @@
             margin: 70px 0 70px 0px;
         }
 
-        .linha-verde{
+        .linha-verde {
             background-color: #294f30;
             width: 220px;
             height: 10px;
             border: #000000 solid 0.8px;
 
         }
-        .linha-branca{
+
+        .linha-branca {
             background-color: #F4EFE5;
             width: 220px;
             height: 10px;
             border: #000000 solid 0.8px;
 
         }
+
+        .sempressa {
+            display: flex;
+
+            .traço {
+                color: #B53A27;
+                margin-right: 10px;
+                margin-bottom: 5px;
+            }
+        }
     }
 
-    .mapa{
-        iframe{
+    .mapa {
+        iframe {
             height: 600px;
         }
     }
 
-    .texto-vermelho{
+    .texto-vermelho {
         color: var(--corVemelhoD);
-        margin-bottom:20px;
-        
+        margin-bottom: 20px;
+
     }
 
-    .texto-localizacao{
-        font-family: "Cormorant Garamond", serif; 
+    .texto-localizacao {
+        font-family: "Cormorant Garamond", serif;
         font-size: 20px;
-        a{
 
-        }
-        .margem{
+        a {}
+
+        .margem {
             margin-bottom: 20px;
         }
     }
 
-    .sobre{
+    .sobre {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 100px;
     }
 
-    .sobre-blocos{
-        width: 300px ;
-        a{
-            font-family:"IBM Plex Mono", monospace; 
+    .sobre-blocos {
+        width: 300px;
+
+        a {
+            font-family: "IBM Plex Mono", monospace;
             color: #000000;
             text-decoration: none;
         }
     }
 
-    .texto-faledireto{
-        p{
+    .texto-faledireto {
+        p {
             margin-bottom: 15px;
         }
+
         text-decoration: underline;
     }
-   
-    .segsex{
-        display: flex;
-        justify-content: space-between;
-        margin-right: 40px; 
-        margin-bottom: 15px; 
-    }
-    
-    .sab{
-        display: flex;
-        justify-content: space-between;
-        margin-right: 40px; 
-        margin-bottom: 15px; 
-    }
-    
-    .dom{
+
+    .segsex {
         display: flex;
         justify-content: space-between;
         margin-right: 40px;
-        margin-bottom: 15px; 
+        margin-bottom: 15px;
+    }
+
+    .sab {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 40px;
+        margin-bottom: 15px;
+    }
+
+    .dom {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 40px;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #172923;
+        color: var(--corBrancoQ);
+        padding: 25px;
+
+        img {
+            width: 150px;
+        }
+    }
+
+    .linhapreta {
+        width: 750px;
+        height: 1px;
+        background-color: #4949495f;
+    }
+
+    .novidades {
+        h1 {
+
+            font-size: 40px;
+            font-family: "Cormorant Garamond", serif !important;
+        }
+
+        input {
+            background-color: var(--corFundoP);
+            border: none;
+            width: 750px;
+        }
+
+        .linhapreta2 {
+            width: 750px;
+            height: 1px;
+            background-color: #4949495f;
+        }
     }
